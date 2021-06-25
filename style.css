@@ -1,0 +1,174 @@
+body {
+background-color: #ABC9BD;
+font-family: courier;
+display:flex;
+flex-direction: column;
+}
+
+a[href]:visited {
+color:#334E3B
+}
+
+a[href]{
+color:#072F38;
+}
+
+a[href]:hover {
+color:#BD7423
+}
+
+header {
+color: #072F38;
+font-size: 48px;
+display:block;
+}
+
+header h1 {
+display: inline-block;
+}
+
+header div {
+float:right;
+padding-top:20px;
+margin-right:20px;
+font-size: 20px;
+}
+
+#mainImage {
+height:200px;
+width:100%;
+margin-bottom:10px;
+background-image: url(./images/books.png);
+background-size: cover;
+background-position: center;
+}
+
+#pictureOfMe {
+border: 2px solid #6F988A;
+flex:1;
+z-index:2;
+margin-top: 1%;
+margin-left:1%;
+height: 150px;
+width: 120px;
+}
+
+/* THis is the About Me Section   */
+ 
+#aboutMe {
+padding:5px;
+font-size: large;
+color: #334E3B;
+margin:auto;
+text-align: center;
+display: block;
+}
+
+article {
+display: flex;
+flex-direction: row;
+}
+
+article p {
+padding: 5px;
+color: #6F988A;
+width:100%;
+}
+
+/* THis is the Work Section   */
+
+#work {
+padding:5px;
+font-size: large;
+color: #334E3B;
+margin:auto;
+text-align: center;
+display: block;
+}
+
+.portfolioImage {
+height: 100%;
+width: 100%;
+z-index:0;
+}
+
+#mainItem {
+margin: 10px;
+border: 2px solid #6F988A;
+height: 300px;
+width: 720px;
+flex-shrink:1
+}
+
+@media only screen and (max-width:600px) {
+#main item {
+max-width:300px;
+}
+}
+
+@media only screen and (max-width:340) {
+#main item {
+min-width:300px
+}
+}
+
+.portfolioItem {
+border: 2px solid #6F988A;
+height: 300px;
+width: 350px;
+margin:10px;
+}
+
+.imageTitles {
+background-color: #6F988A;
+color:white;
+z-index: 100;
+width: 23%;
+margin-top: 1%;
+align-content: center;
+position:absolute;
+padding:2px;
+min-width: 23%;
+}
+
+/*flex behavior */
+.row1 {
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.row2 {
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.row3 {
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+/*footer code*/
+footer {
+display: block;
+font-size:32px;
+padding:5px;
+margin:auto;
+color: #6F988A;
+display:flex;
+justify-content: flex-end;
+background-color: azure;
+flex-wrap:wrap;
+flex-shrink: 1;
+width:100%;
+}
+
+footer a {
+text-decoration:underline;
+padding:5px;
+margin:auto;
+max-width:100%;
+display:block;
+}
